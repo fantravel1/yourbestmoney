@@ -1,0 +1,907 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <!-- Primary SEO -->
+  <title>Tools &amp; Calculators — Your Wealth Operating System | YourBestMoney</title>
+  <meta name="description" content="Free interactive financial tools: compound interest calculator, net worth tracker, budget planner, risk tolerance quiz, scam detector, emergency fund calculator, and more. Build wealth with the right tools.">
+  <meta name="keywords" content="financial calculators, compound interest calculator, net worth tracker, budget calculator, risk tolerance quiz, scam detector, emergency fund calculator, investment fee calculator, financial tools, wealth building tools">
+  <meta name="author" content="YourBestMoney">
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1">
+  <link rel="canonical" href="https://yourbestmoney.com/en/tools.html">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="YourBestMoney">
+  <meta property="og:title" content="Tools &amp; Calculators — Your Wealth Operating System">
+  <meta property="og:description" content="Free interactive financial tools: calculators, trackers, quizzes, and checklists to build your wealth with confidence.">
+  <meta property="og:url" content="https://yourbestmoney.com/en/tools.html">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=630&fit=crop">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="es_ES">
+  <meta property="og:locale:alternate" content="fr_FR">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tools &amp; Calculators — Your Wealth Operating System">
+  <meta name="twitter:description" content="Free interactive financial tools and calculators to build wealth with confidence.">
+  <meta name="twitter:image" content="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=630&fit=crop">
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Tools & Calculators — Your Wealth Operating System",
+    "description": "Free interactive financial tools: compound interest calculator, net worth tracker, budget planner, risk tolerance quiz, and more.",
+    "url": "https://yourbestmoney.com/en/tools.html",
+    "isPartOf": { "@type": "WebSite", "name": "YourBestMoney", "url": "https://yourbestmoney.com" },
+    "inLanguage": "en",
+    "publisher": { "@type": "Organization", "name": "YourBestMoney", "url": "https://yourbestmoney.com" }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Are these financial tools free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes, all tools and calculators on YourBestMoney are 100% free — forever. No sign-up required, no hidden fees, no premium tier." } },
+      { "@type": "Question", "name": "Do these calculators provide financial advice?", "acceptedAnswer": { "@type": "Answer", "text": "No. These tools are for educational purposes only. They provide estimates based on the numbers you input and general financial principles. They do not account for your specific tax situation, risk factors, or individual circumstances. Always consult a qualified financial professional for personalized advice." } },
+      { "@type": "Question", "name": "Is my data saved when I use these tools?", "acceptedAnswer": { "@type": "Answer", "text": "No. All calculations happen directly in your browser. We do not collect, store, or transmit any of the financial data you enter into these tools. Your privacy is fully protected." } }
+    ]
+  }
+  </script>
+
+  <!-- Hreflang -->
+  <link rel="alternate" hreflang="en" href="https://yourbestmoney.com/en/tools.html">
+  <link rel="alternate" hreflang="es" href="https://yourbestmoney.com/es/tools.html">
+  <link rel="alternate" hreflang="fr" href="https://yourbestmoney.com/fr/tools.html">
+  <link rel="alternate" hreflang="x-default" href="https://yourbestmoney.com/en/tools.html">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Playfair+Display:wght@600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/style.css">
+  <style>
+    .tool-card { background: var(--color-surface, #fff); border-radius: 16px; padding: var(--space-8); box-shadow: 0 2px 12px rgba(0,0,0,0.06); margin-bottom: var(--space-8); }
+    .tool-card h3 { margin-bottom: var(--space-4); }
+    .tool-input-group { margin-bottom: var(--space-4); }
+    .tool-input-group label { display: block; font-weight: 600; margin-bottom: var(--space-2); font-size: var(--text-sm); }
+    .tool-input { width: 100%; padding: 12px 16px; border: 2px solid var(--color-border, #E2E8F0); border-radius: 8px; font-size: var(--text-base, 16px); font-family: inherit; transition: border-color 0.2s; }
+    .tool-input:focus { outline: none; border-color: var(--color-accent); }
+    .tool-btn { display: inline-block; padding: 12px 28px; background: var(--color-accent); color: #fff; border: none; border-radius: 8px; font-size: var(--text-base, 16px); font-weight: 600; cursor: pointer; font-family: inherit; transition: background 0.2s; }
+    .tool-btn:hover { opacity: 0.9; }
+    .tool-result { margin-top: var(--space-6); padding: var(--space-6); background: var(--color-cream, #FFFBF0); border-radius: 12px; display: none; }
+    .tool-result.visible { display: block; }
+    .tool-result-row { display: flex; justify-content: space-between; align-items: center; padding: var(--space-3) 0; border-bottom: 1px solid var(--color-border, #E2E8F0); }
+    .tool-result-row:last-child { border-bottom: none; }
+    .tool-result-label { font-weight: 500; color: var(--color-text-light, #64748B); }
+    .tool-result-value { font-weight: 700; font-size: var(--text-lg, 1.125rem); }
+    .tool-result-value.positive { color: #16A34A; }
+    .tool-result-value.negative { color: #DC2626; }
+    .tool-grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-4); }
+    @media (max-width: 640px) { .tool-grid-2 { grid-template-columns: 1fr; } }
+    .quiz-choice { display: block; width: 100%; text-align: left; padding: 14px 18px; margin-bottom: var(--space-3); background: var(--color-surface, #fff); border: 2px solid var(--color-border, #E2E8F0); border-radius: 10px; cursor: pointer; font-family: inherit; font-size: var(--text-base, 16px); transition: all 0.2s; }
+    .quiz-choice:hover { border-color: var(--color-accent); background: var(--color-cream, #FFFBF0); }
+    .quiz-choice.selected { border-color: var(--color-accent); background: var(--color-accent); color: #fff; }
+    .checklist-item { display: flex; align-items: flex-start; gap: var(--space-3); padding: var(--space-3) 0; border-bottom: 1px solid var(--color-border, #E2E8F0); }
+    .checklist-item:last-child { border-bottom: none; }
+    .checklist-item input[type="checkbox"] { margin-top: 4px; width: 20px; height: 20px; cursor: pointer; }
+    .checklist-item label { cursor: pointer; flex: 1; }
+    .progress-bar { height: 12px; background: var(--color-border, #E2E8F0); border-radius: 6px; overflow: hidden; margin-top: var(--space-3); }
+    .progress-bar-fill { height: 100%; background: var(--color-accent); border-radius: 6px; transition: width 0.5s ease; }
+  </style>
+</head>
+<body>
+
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- HEADER -->
+  <header class="site-header" role="banner">
+    <div class="header-inner">
+      <a href="/en/" class="logo" aria-label="YourBestMoney Home">
+        <span class="logo-icon" aria-hidden="true">$</span>
+        <span>YourBest<strong>Money</strong></span>
+      </a>
+      <nav class="nav-desktop" role="navigation" aria-label="Main Navigation">
+        <a href="/en/">Home</a>
+        <a href="/en/psychology-of-money.html">Psychology of Money</a>
+        <a href="/en/investing-basics.html">Investing Basics</a>
+        <a href="/en/alternative-investing.html">Alternative Investing</a>
+        <a href="/en/crypto-education.html">Crypto Education</a>
+        <a href="/en/expert-vault.html">Expert Vault</a>
+        <a href="/en/tools.html" class="active">Tools</a>
+        <a href="/en/community.html">Community</a>
+      </nav>
+      <div class="nav-actions">
+        <div class="lang-switcher">
+          <button class="lang-btn" aria-expanded="false" aria-haspopup="true" aria-label="Select language">
+            <span aria-hidden="true">&#127760;</span> EN
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none" aria-hidden="true"><path d="M3 5L6 8L9 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <div class="lang-dropdown" role="menu">
+            <a href="/en/tools.html" role="menuitem" class="active">&#127482;&#127480; English</a>
+            <a href="/es/tools.html" role="menuitem">&#127466;&#127480; Espa&ntilde;ol</a>
+            <a href="/fr/tools.html" role="menuitem">&#127467;&#127479; Fran&ccedil;ais</a>
+          </div>
+        </div>
+        <button class="mobile-menu-toggle" aria-label="Open menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Navigation -->
+  <nav class="nav-mobile" role="navigation" aria-label="Mobile Navigation">
+    <a href="/en/">Home</a>
+    <a href="/en/psychology-of-money.html">Psychology of Money</a>
+    <a href="/en/investing-basics.html">Investing Basics</a>
+    <a href="/en/alternative-investing.html">Alternative Investing</a>
+    <a href="/en/crypto-education.html">Crypto Education</a>
+    <a href="/en/expert-vault.html">Expert Vault</a>
+    <a href="/en/tools.html" class="active">Tools &amp; Calculators</a>
+    <a href="/en/community.html">Community</a>
+    <a href="/en/ownership-ladder.html">Ownership Ladder</a>
+    <div class="mobile-lang-section">
+      <a href="/en/tools.html" class="active">EN</a>
+      <a href="/es/tools.html">ES</a>
+      <a href="/fr/tools.html">FR</a>
+    </div>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- ========== HERO ========== -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span aria-hidden="true">&#128736;</span> Free Tools — No Sign-up Required
+          </div>
+          <h1 id="hero-heading">
+            Your Wealth <span class="accent">Operating System</span>
+          </h1>
+          <p class="hero-subtitle">
+            Powerful, simple, mobile-friendly financial tools that respect your time. Calculate, plan, and track your wealth-building journey — all free, all private, all in your browser.
+          </p>
+          <div class="hero-ctas">
+            <a href="#compound-calc" class="btn btn-accent btn-lg">Compound Calculator</a>
+            <a href="#net-worth" class="btn btn-ghost btn-lg">Net Worth Tracker</a>
+          </div>
+        </div>
+        <div class="hero-image">
+          <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=600&h=500&fit=crop"
+               alt="Woman using financial tools and calculator for personal wealth planning"
+               width="600" height="500" loading="eager">
+          <div class="hero-image-decoration" aria-hidden="true"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== COMPOUND INTEREST CALCULATOR ========== -->
+    <section class="section" id="compound-calc" aria-labelledby="compound-heading">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">Calculator</span>
+          <h2 id="compound-heading">&#128200; Compound Interest Calculator</h2>
+          <p>See how your money can grow over time with the power of compound interest. Even small amounts add up dramatically.</p>
+        </div>
+
+        <div class="tool-card animate-on-scroll" style="max-width: 700px; margin: 0 auto;">
+          <div class="tool-grid-2">
+            <div class="tool-input-group">
+              <label for="ci-initial">Starting Amount ($)</label>
+              <input type="number" id="ci-initial" class="tool-input" value="1000" min="0" step="100" aria-label="Initial investment amount">
+            </div>
+            <div class="tool-input-group">
+              <label for="ci-monthly">Monthly Contribution ($)</label>
+              <input type="number" id="ci-monthly" class="tool-input" value="100" min="0" step="25" aria-label="Monthly contribution amount">
+            </div>
+            <div class="tool-input-group">
+              <label for="ci-rate">Annual Interest Rate (%)</label>
+              <input type="number" id="ci-rate" class="tool-input" value="8" min="0" max="30" step="0.5" aria-label="Annual interest rate percentage">
+            </div>
+            <div class="tool-input-group">
+              <label for="ci-years">Time Period (Years)</label>
+              <input type="number" id="ci-years" class="tool-input" value="20" min="1" max="50" step="1" aria-label="Investment time period in years">
+            </div>
+          </div>
+          <button class="tool-btn" onclick="calcCompound()" style="margin-top: var(--space-4);">Calculate Growth &#8594;</button>
+
+          <div class="tool-result" id="ci-result">
+            <div class="tool-result-row">
+              <span class="tool-result-label">Final Balance</span>
+              <span class="tool-result-value positive" id="ci-final">—</span>
+            </div>
+            <div class="tool-result-row">
+              <span class="tool-result-label">Total Contributions</span>
+              <span class="tool-result-value" id="ci-contributions">—</span>
+            </div>
+            <div class="tool-result-row">
+              <span class="tool-result-label">Total Interest Earned</span>
+              <span class="tool-result-value positive" id="ci-interest">—</span>
+            </div>
+            <div class="tool-result-row">
+              <span class="tool-result-label">Interest as % of Total</span>
+              <span class="tool-result-value" id="ci-percent">—</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== NET WORTH TRACKER ========== -->
+    <section class="section section-cream" id="net-worth" aria-labelledby="networth-heading">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">Tracker</span>
+          <h2 id="networth-heading">&#128176; Net Worth Tracker</h2>
+          <p>Your net worth = what you own minus what you owe. This is the single most important number in your financial life. Track it here.</p>
+        </div>
+
+        <div class="tool-card animate-on-scroll" style="max-width: 700px; margin: 0 auto;">
+          <h3>Assets (What You Own)</h3>
+          <div class="tool-grid-2">
+            <div class="tool-input-group">
+              <label for="nw-savings">Savings &amp; Cash ($)</label>
+              <input type="number" id="nw-savings" class="tool-input nw-asset" value="0" min="0" step="100">
+            </div>
+            <div class="tool-input-group">
+              <label for="nw-investments">Investments &amp; Retirement ($)</label>
+              <input type="number" id="nw-investments" class="tool-input nw-asset" value="0" min="0" step="100">
+            </div>
+            <div class="tool-input-group">
+              <label for="nw-property">Property Value ($)</label>
+              <input type="number" id="nw-property" class="tool-input nw-asset" value="0" min="0" step="1000">
+            </div>
+            <div class="tool-input-group">
+              <label for="nw-vehicles">Vehicles ($)</label>
+              <input type="number" id="nw-vehicles" class="tool-input nw-asset" value="0" min="0" step="500">
+            </div>
+            <div class="tool-input-group">
+              <label for="nw-other-assets">Other Assets ($)</label>
+              <input type="number" id="nw-other-assets" class="tool-input nw-asset" value="0" min="0" step="100">
+            </div>
+          </div>
+
+          <h3 style="margin-top: var(--space-8);">Liabilities (What You Owe)</h3>
+          <div class="tool-grid-2">
+            <div class="tool-input-group">
+              <label for="nw-mortgage">Mortgage ($)</label>
+              <input type="number" id="nw-mortgage" class="tool-input nw-liability" value="0" min="0" step="1000">
+            </div>
+            <div class="tool-input-group">
+              <label for="nw-student">Student Loans ($)</label>
+              <input type="number" id="nw-student" class="tool-input nw-liability" value="0" min="0" step="500">
+            </div>
+            <div class="tool-input-group">
+              <label for="nw-credit">Credit Card Debt ($)</label>
+              <input type="number" id="nw-credit" class="tool-input nw-liability" value="0" min="0" step="100">
+            </div>
+            <div class="tool-input-group">
+              <label for="nw-car-loan">Car Loans ($)</label>
+              <input type="number" id="nw-car-loan" class="tool-input nw-liability" value="0" min="0" step="500">
+            </div>
+            <div class="tool-input-group">
+              <label for="nw-other-debt">Other Debts ($)</label>
+              <input type="number" id="nw-other-debt" class="tool-input nw-liability" value="0" min="0" step="100">
+            </div>
+          </div>
+
+          <button class="tool-btn" onclick="calcNetWorth()" style="margin-top: var(--space-4);">Calculate Net Worth &#8594;</button>
+
+          <div class="tool-result" id="nw-result">
+            <div class="tool-result-row">
+              <span class="tool-result-label">Total Assets</span>
+              <span class="tool-result-value" id="nw-total-assets">—</span>
+            </div>
+            <div class="tool-result-row">
+              <span class="tool-result-label">Total Liabilities</span>
+              <span class="tool-result-value" id="nw-total-liabilities">—</span>
+            </div>
+            <div class="tool-result-row" style="border-top: 3px solid var(--color-accent); padding-top: var(--space-4);">
+              <span class="tool-result-label" style="font-size: var(--text-lg, 1.125rem); font-weight: 700;">Net Worth</span>
+              <span class="tool-result-value" id="nw-net-worth" style="font-size: var(--text-xl, 1.25rem);">—</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== BUDGET CALCULATOR ========== -->
+    <section class="section" id="budget-calc" aria-labelledby="budget-heading">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">Calculator</span>
+          <h2 id="budget-heading">&#128181; 50/30/20 Budget Calculator</h2>
+          <p>The 50/30/20 rule is a simple framework: 50% for needs, 30% for wants, 20% for savings and investing. Enter your income to see your targets.</p>
+        </div>
+
+        <div class="tool-card animate-on-scroll" style="max-width: 700px; margin: 0 auto;">
+          <div class="tool-input-group">
+            <label for="budget-income">Monthly After-Tax Income ($)</label>
+            <input type="number" id="budget-income" class="tool-input" value="3000" min="0" step="100" aria-label="Monthly after-tax income">
+          </div>
+          <button class="tool-btn" onclick="calcBudget()">Calculate Budget &#8594;</button>
+
+          <div class="tool-result" id="budget-result">
+            <div class="tool-result-row">
+              <span class="tool-result-label">&#127968; Needs (50%) — Housing, food, utilities, insurance, transport</span>
+              <span class="tool-result-value" id="budget-needs">—</span>
+            </div>
+            <div class="tool-result-row">
+              <span class="tool-result-label">&#127881; Wants (30%) — Dining out, entertainment, hobbies, subscriptions</span>
+              <span class="tool-result-value" id="budget-wants">—</span>
+            </div>
+            <div class="tool-result-row">
+              <span class="tool-result-label">&#128200; Savings &amp; Investing (20%) — Emergency fund, retirement, investments</span>
+              <span class="tool-result-value positive" id="budget-savings">—</span>
+            </div>
+          </div>
+
+          <div style="margin-top: var(--space-4); padding: var(--space-4); background: var(--color-cream, #FFFBF0); border-radius: 8px;">
+            <p style="margin:0; font-size: var(--text-sm);"><strong>&#128161; Tip:</strong> If 20% savings feels impossible right now, start with whatever you can — even 5% or $25/month. The goal is to build the habit. You can increase the percentage as your income grows or expenses decrease.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== EMERGENCY FUND CALCULATOR ========== -->
+    <section class="section section-cream" id="emergency-calc" aria-labelledby="emergency-heading">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">Calculator</span>
+          <h2 id="emergency-heading">&#128737; Emergency Fund Calculator</h2>
+          <p>An emergency fund protects you from life's unexpected expenses. See how much you need and track your progress.</p>
+        </div>
+
+        <div class="tool-card animate-on-scroll" style="max-width: 700px; margin: 0 auto;">
+          <div class="tool-grid-2">
+            <div class="tool-input-group">
+              <label for="ef-expenses">Monthly Essential Expenses ($)</label>
+              <input type="number" id="ef-expenses" class="tool-input" value="2000" min="0" step="100" aria-label="Monthly essential expenses">
+            </div>
+            <div class="tool-input-group">
+              <label for="ef-saved">Amount Already Saved ($)</label>
+              <input type="number" id="ef-saved" class="tool-input" value="500" min="0" step="100" aria-label="Current emergency fund savings">
+            </div>
+          </div>
+          <button class="tool-btn" onclick="calcEmergency()">Calculate &#8594;</button>
+
+          <div class="tool-result" id="ef-result">
+            <div class="tool-result-row">
+              <span class="tool-result-label">3-Month Target (Starter)</span>
+              <span class="tool-result-value" id="ef-3month">—</span>
+            </div>
+            <div class="tool-result-row">
+              <span class="tool-result-label">6-Month Target (Recommended)</span>
+              <span class="tool-result-value" id="ef-6month">—</span>
+            </div>
+            <div class="tool-result-row">
+              <span class="tool-result-label">12-Month Target (Strong)</span>
+              <span class="tool-result-value" id="ef-12month">—</span>
+            </div>
+            <div class="tool-result-row" style="border-top: 3px solid var(--color-accent); padding-top: var(--space-4);">
+              <span class="tool-result-label">Your Progress Toward 6-Month Goal</span>
+              <span class="tool-result-value" id="ef-progress-pct">—</span>
+            </div>
+            <div class="progress-bar" id="ef-progress-bar"><div class="progress-bar-fill" id="ef-progress-fill" style="width:0%;"></div></div>
+            <p style="margin-top: var(--space-3); font-size: var(--text-sm); color: var(--color-text-light);" id="ef-remaining">—</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== INVESTMENT FEE CALCULATOR ========== -->
+    <section class="section" id="fee-calc" aria-labelledby="fee-heading">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">Calculator</span>
+          <h2 id="fee-heading">&#128184; Investment Fee Impact Calculator</h2>
+          <p>Fees seem small, but they compound against you. See how different fee levels eat into your returns over decades.</p>
+        </div>
+
+        <div class="tool-card animate-on-scroll" style="max-width: 700px; margin: 0 auto;">
+          <div class="tool-grid-2">
+            <div class="tool-input-group">
+              <label for="fee-amount">Investment Amount ($)</label>
+              <input type="number" id="fee-amount" class="tool-input" value="50000" min="0" step="1000">
+            </div>
+            <div class="tool-input-group">
+              <label for="fee-return">Annual Return Before Fees (%)</label>
+              <input type="number" id="fee-return" class="tool-input" value="8" min="0" max="30" step="0.5">
+            </div>
+            <div class="tool-input-group">
+              <label for="fee-low">Low Fee (%)</label>
+              <input type="number" id="fee-low" class="tool-input" value="0.1" min="0" max="5" step="0.05">
+            </div>
+            <div class="tool-input-group">
+              <label for="fee-high">High Fee (%)</label>
+              <input type="number" id="fee-high" class="tool-input" value="1.5" min="0" max="5" step="0.05">
+            </div>
+            <div class="tool-input-group">
+              <label for="fee-years">Time Period (Years)</label>
+              <input type="number" id="fee-years" class="tool-input" value="30" min="1" max="50" step="1">
+            </div>
+          </div>
+          <button class="tool-btn" onclick="calcFees()">Compare Fees &#8594;</button>
+
+          <div class="tool-result" id="fee-result">
+            <div class="tool-result-row">
+              <span class="tool-result-label">With Low Fee</span>
+              <span class="tool-result-value positive" id="fee-low-result">—</span>
+            </div>
+            <div class="tool-result-row">
+              <span class="tool-result-label">With High Fee</span>
+              <span class="tool-result-value" id="fee-high-result">—</span>
+            </div>
+            <div class="tool-result-row" style="border-top: 3px solid var(--color-accent); padding-top: var(--space-4);">
+              <span class="tool-result-label">Money Lost to Higher Fees</span>
+              <span class="tool-result-value negative" id="fee-diff">—</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== SCAM DETECTOR ========== -->
+    <section class="section section-cream" id="scam-detector" aria-labelledby="scam-heading">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">&#128274; Safety Tool</span>
+          <h2 id="scam-heading">&#128680; Financial Scam Detector</h2>
+          <p>Encountered a suspicious investment opportunity? Check it against these common red flags. The more boxes you check, the more likely it's a scam.</p>
+        </div>
+
+        <div class="tool-card animate-on-scroll" style="max-width: 700px; margin: 0 auto;">
+          <div id="scam-checks">
+            <div class="checklist-item"><input type="checkbox" id="sc1" class="scam-flag"><label for="sc1">Promises guaranteed returns or "risk-free" profits</label></div>
+            <div class="checklist-item"><input type="checkbox" id="sc2" class="scam-flag"><label for="sc2">Pressures you to invest immediately ("limited time!")</label></div>
+            <div class="checklist-item"><input type="checkbox" id="sc3" class="scam-flag"><label for="sc3">Vague about how the returns are generated</label></div>
+            <div class="checklist-item"><input type="checkbox" id="sc4" class="scam-flag"><label for="sc4">Not registered with financial regulators (SEC, FINRA, FCA)</label></div>
+            <div class="checklist-item"><input type="checkbox" id="sc5" class="scam-flag"><label for="sc5">Requires you to recruit others to earn money (pyramid structure)</label></div>
+            <div class="checklist-item"><input type="checkbox" id="sc6" class="scam-flag"><label for="sc6">Unsolicited contact — they reached out to you first</label></div>
+            <div class="checklist-item"><input type="checkbox" id="sc7" class="scam-flag"><label for="sc7">Asks for your passwords, seed phrases, or private keys</label></div>
+            <div class="checklist-item"><input type="checkbox" id="sc8" class="scam-flag"><label for="sc8">Uses fake celebrity endorsements or testimonials</label></div>
+            <div class="checklist-item"><input type="checkbox" id="sc9" class="scam-flag"><label for="sc9">Difficulty withdrawing your money</label></div>
+            <div class="checklist-item"><input type="checkbox" id="sc10" class="scam-flag"><label for="sc10">No verifiable company address, registration, or team</label></div>
+            <div class="checklist-item"><input type="checkbox" id="sc11" class="scam-flag"><label for="sc11">Uses complex jargon to confuse you</label></div>
+            <div class="checklist-item"><input type="checkbox" id="sc12" class="scam-flag"><label for="sc12">Requires payment in crypto, gift cards, or wire transfers only</label></div>
+          </div>
+
+          <div id="scam-detector-result" style="margin-top: var(--space-6); padding: var(--space-5); border-radius: 12px; text-align: center; display: none;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== RISK TOLERANCE QUIZ ========== -->
+    <section class="section" id="risk-quiz" aria-labelledby="risk-heading">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">Interactive Quiz</span>
+          <h2 id="risk-heading">&#127919; Risk Tolerance Quiz</h2>
+          <p>Understanding your comfort with risk is essential before investing. Answer these 5 questions to discover your investor profile.</p>
+        </div>
+
+        <div class="tool-card animate-on-scroll" style="max-width: 700px; margin: 0 auto;">
+          <div id="risk-quiz-container">
+            <!-- Question 1 -->
+            <div class="risk-q" data-q="1">
+              <h4>1. Your investment drops 20% in one month. What do you do?</h4>
+              <button class="quiz-choice" data-pts="4" onclick="selectRisk(this)">Buy more — it's on sale!</button>
+              <button class="quiz-choice" data-pts="3" onclick="selectRisk(this)">Hold steady and wait for recovery</button>
+              <button class="quiz-choice" data-pts="2" onclick="selectRisk(this)">Sell some to reduce my risk</button>
+              <button class="quiz-choice" data-pts="1" onclick="selectRisk(this)">Sell everything — I can't sleep at night</button>
+            </div>
+            <!-- Question 2 -->
+            <div class="risk-q" data-q="2" style="display:none;">
+              <h4>2. When do you expect to need this money?</h4>
+              <button class="quiz-choice" data-pts="4" onclick="selectRisk(this)">20+ years from now</button>
+              <button class="quiz-choice" data-pts="3" onclick="selectRisk(this)">10-20 years from now</button>
+              <button class="quiz-choice" data-pts="2" onclick="selectRisk(this)">5-10 years from now</button>
+              <button class="quiz-choice" data-pts="1" onclick="selectRisk(this)">Less than 5 years</button>
+            </div>
+            <!-- Question 3 -->
+            <div class="risk-q" data-q="3" style="display:none;">
+              <h4>3. How would you describe your investing experience?</h4>
+              <button class="quiz-choice" data-pts="4" onclick="selectRisk(this)">Experienced — I've invested through market cycles</button>
+              <button class="quiz-choice" data-pts="3" onclick="selectRisk(this)">Some experience — I have basic investments</button>
+              <button class="quiz-choice" data-pts="2" onclick="selectRisk(this)">Beginner — just starting to learn</button>
+              <button class="quiz-choice" data-pts="1" onclick="selectRisk(this)">None — this is completely new to me</button>
+            </div>
+            <!-- Question 4 -->
+            <div class="risk-q" data-q="4" style="display:none;">
+              <h4>4. Which outcome would you prefer?</h4>
+              <button class="quiz-choice" data-pts="4" onclick="selectRisk(this)">Chance to gain 40% but also risk losing 25%</button>
+              <button class="quiz-choice" data-pts="3" onclick="selectRisk(this)">Chance to gain 20% but also risk losing 10%</button>
+              <button class="quiz-choice" data-pts="2" onclick="selectRisk(this)">Chance to gain 10% but also risk losing 5%</button>
+              <button class="quiz-choice" data-pts="1" onclick="selectRisk(this)">Keep my money safe even if returns are low</button>
+            </div>
+            <!-- Question 5 -->
+            <div class="risk-q" data-q="5" style="display:none;">
+              <h4>5. How stable is your income?</h4>
+              <button class="quiz-choice" data-pts="4" onclick="selectRisk(this)">Very stable with multiple income sources</button>
+              <button class="quiz-choice" data-pts="3" onclick="selectRisk(this)">Stable — steady job with good prospects</button>
+              <button class="quiz-choice" data-pts="2" onclick="selectRisk(this)">Somewhat unstable — income varies month to month</button>
+              <button class="quiz-choice" data-pts="1" onclick="selectRisk(this)">Unstable — I'm not sure about next month</button>
+            </div>
+          </div>
+          <div id="risk-result" style="display:none; margin-top: var(--space-6); padding: var(--space-6); border-radius: 12px; text-align:center;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== WHAT SHOULD I LEARN NEXT ========== -->
+    <section class="section section-cream" id="learn-quiz" aria-labelledby="learn-heading">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">Pathway Quiz</span>
+          <h2 id="learn-heading">&#128218; What Should I Learn Next?</h2>
+          <p>Not sure where to focus? Answer a few questions and we'll recommend your ideal learning path.</p>
+        </div>
+
+        <div class="tool-card animate-on-scroll" style="max-width: 700px; margin: 0 auto;">
+          <div id="learn-quiz-container">
+            <div class="learn-q" data-q="1">
+              <h4>What's your biggest financial priority right now?</h4>
+              <button class="quiz-choice" data-val="psychology" onclick="selectLearn(this)">Understanding my relationship with money</button>
+              <button class="quiz-choice" data-val="investing" onclick="selectLearn(this)">Starting to invest and grow my money</button>
+              <button class="quiz-choice" data-val="alternative" onclick="selectLearn(this)">Exploring investments beyond stocks</button>
+              <button class="quiz-choice" data-val="crypto" onclick="selectLearn(this)">Learning about cryptocurrency safely</button>
+            </div>
+            <div class="learn-q" data-q="2" style="display:none;">
+              <h4>Where are you in your financial journey?</h4>
+              <button class="quiz-choice" data-val="ladder" onclick="selectLearn(this)">I need a clear roadmap from scratch</button>
+              <button class="quiz-choice" data-val="community" onclick="selectLearn(this)">I want support and accountability</button>
+              <button class="quiz-choice" data-val="expert" onclick="selectLearn(this)">I want to learn from top experts</button>
+              <button class="quiz-choice" data-val="tools" onclick="selectLearn(this)">I need practical tools and calculators</button>
+            </div>
+          </div>
+          <div id="learn-result" style="display:none; margin-top: var(--space-6); padding: var(--space-6); background: var(--color-cream, #FFFBF0); border-radius: 12px;"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== FAQ ========== -->
+    <section class="section" aria-labelledby="faq-heading">
+      <div class="container">
+        <div class="section-header animate-on-scroll">
+          <span class="section-label">Your Questions</span>
+          <h2 id="faq-heading">Frequently Asked Questions</h2>
+        </div>
+
+        <div class="accordion animate-on-scroll" style="max-width: 800px; margin: 0 auto;">
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Are these financial tools really free?</span>
+              <span class="accordion-icon" aria-hidden="true">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">Yes, 100% free — forever. All tools and calculators on YourBestMoney are available at no cost with no sign-up required. We believe financial tools should be accessible to everyone, regardless of income.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Is my financial data private and secure?</span>
+              <span class="accordion-icon" aria-hidden="true">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">Absolutely. All calculations happen entirely in your browser using JavaScript. No data is sent to our servers, stored in databases, or shared with any third parties. When you close the page, all the numbers you entered disappear. Your financial information stays 100% private.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How accurate are these calculators?</span>
+              <span class="accordion-icon" aria-hidden="true">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">Our calculators use standard financial formulas and provide reasonable estimates based on the inputs you provide. However, they are simplified models that do not account for taxes, inflation, changing interest rates, market volatility, or your specific financial situation. Use them as educational starting points, not as financial advice. For precise planning, consult a qualified financial professional.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>What is compound interest and why does it matter?</span>
+              <span class="accordion-icon" aria-hidden="true">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">Compound interest is when you earn returns on your returns — your money grows exponentially rather than linearly. A $10,000 investment at 8% annual return grows to about $46,610 in 20 years without adding another dollar. The earlier you start, the more time compounding has to work its magic. This is why even small, consistent investments can lead to significant wealth over time.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Why do investment fees matter so much?</span>
+              <span class="accordion-icon" aria-hidden="true">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">Fees compound against you just as returns compound for you. A 1% annual fee doesn't sound like much, but over 30 years on a $50,000 investment, that difference between a 0.1% and 1.5% fee can cost you over $100,000 in lost returns. This is why low-cost index funds are so popular — they give you broad market exposure at a fraction of the cost of actively managed funds.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>How much emergency fund do I need?</span>
+              <span class="accordion-icon" aria-hidden="true">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">Financial experts generally recommend 3-6 months of essential expenses. If your income is unstable, you're self-employed, or you have dependents, aim for 6-12 months. But don't let the "ideal" number paralyze you — even $500-$1,000 in emergency savings can prevent a minor crisis from becoming a financial catastrophe. Start where you are and build gradually.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>What is the 50/30/20 budget rule?</span>
+              <span class="accordion-icon" aria-hidden="true">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">The 50/30/20 rule is a simple budgeting framework: 50% of your after-tax income goes to needs (housing, food, utilities, insurance, minimum debt payments), 30% to wants (dining out, entertainment, hobbies), and 20% to savings and investing (emergency fund, retirement, investments, extra debt payments). It's a starting guideline — your actual percentages may differ based on your cost of living and goals.</div>
+            </div>
+          </div>
+
+          <div class="accordion-item">
+            <button class="accordion-header" aria-expanded="false">
+              <span>Do these tools replace a financial advisor?</span>
+              <span class="accordion-icon" aria-hidden="true">&#9660;</span>
+            </button>
+            <div class="accordion-body">
+              <div class="accordion-body-inner">No. These tools are for financial education and general planning purposes only. They cannot account for your unique tax situation, estate planning needs, insurance requirements, or specific financial goals. If you have complex financial needs or significant assets, working with a fee-only certified financial planner (CFP) can be a worthwhile investment. Our tools help you prepare for those conversations by understanding the basics.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== NEWSLETTER CTA ========== -->
+    <section class="cta-band" aria-labelledby="cta-tools-heading">
+      <div class="container">
+        <h2 id="cta-tools-heading">Get New Tools &amp; Financial Tips Delivered Free</h2>
+        <p>We're constantly building new calculators, checklists, and interactive tools to help you on your wealth-building journey. Subscribe to get notified when new tools launch.</p>
+        <form class="cta-form" action="#" method="POST" aria-label="Tools newsletter signup">
+          <label for="tools-email" class="sr-only">Your email address</label>
+          <input type="email" id="tools-email" class="cta-input" placeholder="Enter your email address" required autocomplete="email">
+          <button type="submit" class="btn btn-accent btn-lg">Get Tool Updates &rarr;</button>
+        </form>
+        <p style="font-size: var(--text-xs); color: rgba(255,255,255,0.5); margin-top: var(--space-4); margin-bottom:0;">No spam, ever. Unsubscribe anytime.</p>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/en/" class="logo" aria-label="YourBestMoney Home">
+            <span class="logo-icon" aria-hidden="true">$</span>
+            <span>YourBest<strong>Money</strong></span>
+          </a>
+          <p>Free financial education for everyone. Build wealth with confidence — no jargon, no gatekeeping, no cost. Available in English, Spanish, and French.</p>
+        </div>
+        <div class="footer-col">
+          <h5>Learn</h5>
+          <a href="/en/psychology-of-money.html">Psychology of Money</a>
+          <a href="/en/investing-basics.html">Investing Basics</a>
+          <a href="/en/alternative-investing.html">Alternative Investing</a>
+          <a href="/en/crypto-education.html">Crypto Education</a>
+        </div>
+        <div class="footer-col">
+          <h5>Explore</h5>
+          <a href="/en/ownership-ladder.html">Ownership Ladder</a>
+          <a href="/en/expert-vault.html">Expert Vault</a>
+          <a href="/en/tools.html">Tools &amp; Calculators</a>
+          <a href="/en/community.html">Community</a>
+        </div>
+        <div class="footer-col">
+          <h5>Languages</h5>
+          <a href="/en/">&#127482;&#127480; English</a>
+          <a href="/es/">&#127466;&#127480; Espa&ntilde;ol</a>
+          <a href="/fr/">&#127467;&#127479; Fran&ccedil;ais</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 YourBestMoney. All rights reserved. Free education for all.</p>
+        <p class="footer-disclaimer">
+          <strong>Disclaimer:</strong> YourBestMoney provides financial education only and is not a registered investment advisor, broker, or financial planner. All content is for informational and educational purposes only and should not be construed as personalized financial advice. Always consult with a qualified financial professional before making investment decisions. Past performance does not guarantee future results. Investing involves risk, including possible loss of principal.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="scroll-top" aria-label="Scroll to top">&#8593;</button>
+
+  <script src="../js/main.js"></script>
+  <script>
+    function fmt(n) { return '$' + n.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0}); }
+
+    // Compound Interest Calculator
+    function calcCompound() {
+      var P = parseFloat(document.getElementById('ci-initial').value) || 0;
+      var M = parseFloat(document.getElementById('ci-monthly').value) || 0;
+      var r = (parseFloat(document.getElementById('ci-rate').value) || 0) / 100;
+      var t = parseInt(document.getElementById('ci-years').value) || 0;
+      var mr = r / 12;
+      var months = t * 12;
+      var balance = P;
+      for (var i = 0; i < months; i++) { balance = balance * (1 + mr) + M; }
+      var contributions = P + M * months;
+      var interest = balance - contributions;
+      document.getElementById('ci-final').textContent = fmt(Math.round(balance));
+      document.getElementById('ci-contributions').textContent = fmt(Math.round(contributions));
+      document.getElementById('ci-interest').textContent = fmt(Math.round(interest));
+      document.getElementById('ci-percent').textContent = (balance > 0 ? Math.round(interest / balance * 100) : 0) + '%';
+      document.getElementById('ci-result').classList.add('visible');
+    }
+
+    // Net Worth Calculator
+    function calcNetWorth() {
+      var assets = 0, liabilities = 0;
+      document.querySelectorAll('.nw-asset').forEach(function(el) { assets += parseFloat(el.value) || 0; });
+      document.querySelectorAll('.nw-liability').forEach(function(el) { liabilities += parseFloat(el.value) || 0; });
+      var nw = assets - liabilities;
+      document.getElementById('nw-total-assets').textContent = fmt(assets);
+      document.getElementById('nw-total-liabilities').textContent = fmt(liabilities);
+      var nwEl = document.getElementById('nw-net-worth');
+      nwEl.textContent = fmt(nw);
+      nwEl.className = 'tool-result-value ' + (nw >= 0 ? 'positive' : 'negative');
+      document.getElementById('nw-result').classList.add('visible');
+    }
+
+    // Budget Calculator
+    function calcBudget() {
+      var income = parseFloat(document.getElementById('budget-income').value) || 0;
+      document.getElementById('budget-needs').textContent = fmt(Math.round(income * 0.5));
+      document.getElementById('budget-wants').textContent = fmt(Math.round(income * 0.3));
+      document.getElementById('budget-savings').textContent = fmt(Math.round(income * 0.2));
+      document.getElementById('budget-result').classList.add('visible');
+    }
+
+    // Emergency Fund Calculator
+    function calcEmergency() {
+      var expenses = parseFloat(document.getElementById('ef-expenses').value) || 0;
+      var saved = parseFloat(document.getElementById('ef-saved').value) || 0;
+      var t3 = expenses * 3, t6 = expenses * 6, t12 = expenses * 12;
+      document.getElementById('ef-3month').textContent = fmt(t3);
+      document.getElementById('ef-6month').textContent = fmt(t6);
+      document.getElementById('ef-12month').textContent = fmt(t12);
+      var pct = t6 > 0 ? Math.min(Math.round(saved / t6 * 100), 100) : 0;
+      document.getElementById('ef-progress-pct').textContent = pct + '%';
+      document.getElementById('ef-progress-fill').style.width = pct + '%';
+      var remaining = Math.max(t6 - saved, 0);
+      document.getElementById('ef-remaining').textContent = remaining > 0 ? 'You need ' + fmt(remaining) + ' more to reach your 6-month goal.' : 'Congratulations! You have reached your 6-month emergency fund goal!';
+      document.getElementById('ef-result').classList.add('visible');
+    }
+
+    // Fee Impact Calculator
+    function calcFees() {
+      var amount = parseFloat(document.getElementById('fee-amount').value) || 0;
+      var ret = (parseFloat(document.getElementById('fee-return').value) || 0) / 100;
+      var low = (parseFloat(document.getElementById('fee-low').value) || 0) / 100;
+      var high = (parseFloat(document.getElementById('fee-high').value) || 0) / 100;
+      var years = parseInt(document.getElementById('fee-years').value) || 0;
+      var lowFinal = amount * Math.pow(1 + ret - low, years);
+      var highFinal = amount * Math.pow(1 + ret - high, years);
+      document.getElementById('fee-low-result').textContent = fmt(Math.round(lowFinal));
+      document.getElementById('fee-high-result').textContent = fmt(Math.round(highFinal));
+      document.getElementById('fee-diff').textContent = '-' + fmt(Math.round(lowFinal - highFinal));
+      document.getElementById('fee-result').classList.add('visible');
+    }
+
+    // Scam Detector
+    document.querySelectorAll('.scam-flag').forEach(function(cb) {
+      cb.addEventListener('change', function() {
+        var count = document.querySelectorAll('.scam-flag:checked').length;
+        var el = document.getElementById('scam-detector-result');
+        if (count === 0) { el.style.display = 'none'; return; }
+        el.style.display = 'block';
+        if (count >= 4) {
+          el.style.background = '#FFEBEE'; el.style.color = '#B71C1C';
+          el.innerHTML = '<strong>&#128680; VERY HIGH RISK — ' + count + '/12 red flags.</strong><br>This has overwhelming hallmarks of a scam. Do NOT invest. Walk away immediately and report it to authorities.';
+        } else if (count >= 2) {
+          el.style.background = '#FFF3E0'; el.style.color = '#E65100';
+          el.innerHTML = '<strong>&#9888; HIGH CAUTION — ' + count + '/12 red flags.</strong><br>Multiple warning signs detected. Do extremely thorough research before considering any involvement.';
+        } else {
+          el.style.background = '#FFF8E1'; el.style.color = '#F57F17';
+          el.innerHTML = '<strong>&#9888; CAUTION — ' + count + '/12 red flag(s).</strong><br>At least one warning sign detected. Proceed carefully and verify all claims independently.';
+        }
+      });
+    });
+
+    // Risk Tolerance Quiz
+    var riskScore = 0; var riskQ = 0;
+    function selectRisk(btn) {
+      var siblings = btn.parentElement.querySelectorAll('.quiz-choice');
+      siblings.forEach(function(s) { s.classList.remove('selected'); });
+      btn.classList.add('selected');
+      riskScore += parseInt(btn.getAttribute('data-pts'));
+      riskQ++;
+      setTimeout(function() {
+        btn.closest('.risk-q').style.display = 'none';
+        var next = document.querySelector('.risk-q[data-q="' + (riskQ + 1) + '"]');
+        if (next) { next.style.display = 'block'; }
+        else { showRiskResult(); }
+      }, 400);
+    }
+    function showRiskResult() {
+      var el = document.getElementById('risk-result');
+      el.style.display = 'block';
+      var profile, desc, color;
+      if (riskScore >= 17) {
+        profile = '&#128640; Aggressive Growth'; color = '#7C3AED';
+        desc = 'You have a high tolerance for risk and a long time horizon. You may be comfortable with a portfolio heavily weighted toward stocks, including emerging markets, small caps, and potentially some crypto exposure (1-5%). Focus on maximizing long-term growth.';
+      } else if (riskScore >= 13) {
+        profile = '&#128200; Growth-Oriented'; color = '#2563EB';
+        desc = 'You can handle moderate volatility in pursuit of above-average returns. A portfolio of 70-80% stocks and 20-30% bonds may suit you well. Consider diversifying across domestic and international markets.';
+      } else if (riskScore >= 9) {
+        profile = '&#9878; Moderate &amp; Balanced'; color = '#16A34A';
+        desc = 'You prefer a balance between growth and stability. A 50-60% stocks, 40-50% bonds portfolio provides reasonable growth with lower volatility. This is a great approach for building wealth without excessive stress.';
+      } else {
+        profile = '&#128274; Conservative &amp; Safe'; color = '#DC2626';
+        desc = 'You prioritize capital preservation and stability. A portfolio of 20-30% stocks, 60-70% bonds, and 10-20% cash or money market funds will help you sleep at night. Focus on building your emergency fund and reducing debt first.';
+      }
+      el.style.background = 'var(--color-cream, #FFFBF0)';
+      el.innerHTML = '<h3 style="color:' + color + ';">' + profile + '</h3><p>' + desc + '</p><p style="font-size: var(--text-sm); color: var(--color-text-light); margin-top: var(--space-4);">This is an educational estimate, not financial advice. Your actual risk tolerance depends on many personal factors. Consider speaking with a financial advisor for personalized guidance.</p><button class="tool-btn" style="margin-top: var(--space-4);" onclick="resetRisk()">Retake Quiz</button>';
+    }
+    function resetRisk() {
+      riskScore = 0; riskQ = 0;
+      document.getElementById('risk-result').style.display = 'none';
+      document.querySelectorAll('.risk-q').forEach(function(q, i) {
+        q.style.display = i === 0 ? 'block' : 'none';
+        q.querySelectorAll('.quiz-choice').forEach(function(c) { c.classList.remove('selected'); });
+      });
+    }
+
+    // Learn Next Quiz
+    var learnAnswers = []; var learnQ = 0;
+    function selectLearn(btn) {
+      var siblings = btn.parentElement.querySelectorAll('.quiz-choice');
+      siblings.forEach(function(s) { s.classList.remove('selected'); });
+      btn.classList.add('selected');
+      learnAnswers.push(btn.getAttribute('data-val'));
+      learnQ++;
+      setTimeout(function() {
+        btn.closest('.learn-q').style.display = 'none';
+        var next = document.querySelector('.learn-q[data-q="' + (learnQ + 1) + '"]');
+        if (next) { next.style.display = 'block'; }
+        else { showLearnResult(); }
+      }, 400);
+    }
+    function showLearnResult() {
+      var pages = {
+        psychology: { title: 'Psychology of Money', url: '/en/psychology-of-money.html', desc: 'Understanding your relationship with money is the foundation of all wealth-building. Start here to break old patterns and build new ones.' },
+        investing: { title: 'Investing Basics', url: '/en/investing-basics.html', desc: 'Learn stocks, bonds, ETFs, index funds, and how to build your first portfolio — even with small amounts.' },
+        alternative: { title: 'Alternative Investing', url: '/en/alternative-investing.html', desc: 'Go beyond stocks and bonds. Explore real estate, commodities, art, and other alternative assets.' },
+        crypto: { title: 'Crypto Education', url: '/en/crypto-education.html', desc: 'Understand blockchain, Bitcoin, Ethereum, and digital assets — safely and without hype.' },
+        ladder: { title: 'The Ownership Ladder', url: '/en/ownership-ladder.html', desc: 'A step-by-step roadmap from financial stability to generational wealth. Start wherever you are.' },
+        community: { title: 'Community', url: '/en/community.html', desc: 'Join thousands of learners building wealth together. Get support, accountability, and encouragement.' },
+        expert: { title: 'Expert Vault', url: '/en/expert-vault.html', desc: 'Free masterclasses, interviews, and deep dives with certified financial experts.' },
+        tools: { title: 'Tools & Calculators', url: '/en/tools.html', desc: 'You are here! Explore more tools above or try our compound interest calculator.' }
+      };
+      var pick = learnAnswers[learnAnswers.length - 1];
+      var p = pages[pick] || pages.psychology;
+      var el = document.getElementById('learn-result');
+      el.style.display = 'block';
+      el.innerHTML = '<h3>&#127919; We Recommend: ' + p.title + '</h3><p>' + p.desc + '</p><a href="' + p.url + '" class="tool-btn" style="display:inline-block; margin-top: var(--space-4); text-decoration:none;">Go to ' + p.title + ' &rarr;</a><br><button class="tool-btn" style="margin-top: var(--space-3); background: transparent; color: var(--color-text); border: 2px solid var(--color-border);" onclick="resetLearn()">Retake Quiz</button>';
+    }
+    function resetLearn() {
+      learnAnswers = []; learnQ = 0;
+      document.getElementById('learn-result').style.display = 'none';
+      document.querySelectorAll('.learn-q').forEach(function(q, i) {
+        q.style.display = i === 0 ? 'block' : 'none';
+        q.querySelectorAll('.quiz-choice').forEach(function(c) { c.classList.remove('selected'); });
+      });
+    }
+  </script>
+</body>
+</html>
